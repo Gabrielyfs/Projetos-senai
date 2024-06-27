@@ -10,16 +10,7 @@ console.log(texto);
 
 console.log(" ");
 
-const tom = "Tom";
-const firstTom = "Hanks";
-const secondTom = "Cruise";
-const myFavoriteTom = "My Favorite Tom: " + tom + " " + firstTom;
 
-console.log(myFavoriteTom)
-
-console.log(" ");
-
-// divisão
 
 const programmingLanguage = "JavaScript";
 const js = programmingLanguage[0] + programmingLanguage[4];
