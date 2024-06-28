@@ -1,4 +1,44 @@
 h1 {
-    padding-right: 10px;
-    color: blueviolet;
+    text-align: center;
+    color: rgb(143, 122, 193);
+}
+
+body {
+background-color: rgb(237, 207, 237);
+margin-top: 40px;
+}
+
+.container {
+    padding-top: 0px;
+    color: rgb(127, 82, 169);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 80px auto;
+    max-width: 600px;
+    border: 2px solid rgb(138, 15, 138);
+    background: rgb(225, 178, 225);
+}
+
+form.control input {
+    width: 100%;
+    max-width: 250px;
+    padding: 80px;
+    outline: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+button {
+    height: 22px;
+    margin-left: 10px;
+    background: rgb(180, 145, 193);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
