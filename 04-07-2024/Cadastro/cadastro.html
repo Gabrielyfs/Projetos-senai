@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form id="cadastroForm">
+        <div class="form-grupo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" id="nome" required>
+        </div>
+
+        <div class="form-grupo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="form-grupo">
+            <label for="cidade"><strong>Cidade:</strong></label>
+            <input type="text" id="cidade" required>
+        </div>
+
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="result">
+        <h2>Cadastrados
+            <ul id="cadastroList"></ul>
+        </h2>
+    </div>
+
+    <script src="cadastro.js"></script>
+
+</body>
+</html>
