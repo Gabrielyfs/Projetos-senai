@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event){
     event.preventDefault();
 
     let listItem = document.createElement("li")
-    listItem.innerHTML = `<strong>Nome:</strong> ${nome.value} <br><strong>Email:</strong> ${email.value}<br><strong>Cidade:</strong> ${cidade.value}`
+    listItem.textContent = `<strong>Nome:</strong> ${nome.value} <br><strong>Email:</strong> ${email.value}<br><strong>Cidade:</strong> ${cidade.value}`
 
     //adiciona no item na lista
     cadastroList.appendChild(listItem)
