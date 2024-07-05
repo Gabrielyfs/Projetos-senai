@@ -1,0 +1,55 @@
+body{
+    background: #ebebff;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    background: #abb1fa;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover{
+    background-color: #c0c4fb;
+}
+.popup-wrapper{
+    background: #aab0ff90;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    background: whitesmoke;
+    position: relative;
+    padding: 20px;
+}
+.popup a {
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    background-color: #abb1fa;
+    cursor: pointer;
+}
+.popup a:hover{
+    background-color: #6470b9;
+}
+.popup-close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
