@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- eye icon link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <title>Sign-in</title>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+    <h1>Login</h1>
+
+    <!-- mensagem de erro -->
+    <div id="msgError"></div>
+
+    <!-- campo de usuário; input e label -->
+    <div class="label-float">
+        <!-- o placeholder fornece ao usuário uma descrição do valor esperado em um campo de entrada -->
+         <!-- required faz com que o campo seja obrigatório -->
+        <input type="text" id="usuario" placeholder="" required>
+        <label id="userLabel" for="usuario">Usuário</label>
+    </div>
+
+    <!-- campo de senha; input, label e eye icon -->
+    <div class="label-float">
+        <input type="password" id="senha" placeholder=" " required>
+        <label id="senhaLabel" for="senha">Senha</label>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+     </div>
+
+    <div class="justify-center">
+        <!-- function ('click') no html -->
+        <button onclick="entrar()">Entrar</button>
+    </div>
+    
+    <div class="justify-center"><hr></div>
+    
+    <p>Não tem uma conta?
+        <!-- link para ir à página de cadastro -->
+        <a href="../html/cadastro.html">Cadastre-se</a>
+    </p>
+
+</div>
+</div>
+<script src="../js/login.js"></script>
+
+</body>
+</html>

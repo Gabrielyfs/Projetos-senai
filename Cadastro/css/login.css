@@ -1,0 +1,206 @@
+*{
+    /* fonte da letra */
+    font-family: sans-serif;
+    /* zerar a margem padrão do navegador */
+    /* margin: margem ao exterior */
+    margin: 0;
+    /* espaçamento interno */
+    padding: 0;
+}
+
+/* organização e responsividade da imagem em outras telas */
+body{
+    /* foto utilizada no fundo */
+    background: url(https://s1.best-wallpaper.net/wallpaper/m/1808/Mountains-lake-forest-trees-dusk-art-picture_m.webp);
+   /* não repetir */
+    background-repeat: no-repeat;
+    /* cobrir todo o fundo */
+    background-size: cover;
+    /* fixar e preencher */
+    background-attachment: fixed;
+}
+
+/* container: utilizado para criar uma área centralizada na página, limitando o conteúdo*/
+/* conjunto de inputs, h1, a, p, label, button */
+.container{
+    /* flexbox: permite organizar, alinhar e distribuir itens dentro de um container */
+    display: flex;
+    /* centralizar */
+    justify-content: center;
+    /* garantir que cubra 100% da área que ele ocupa */
+    width: 100%;
+    /* margem em relação ao topo */
+    margin-top: 100px;
+}
+
+/* o q é? quadrado que ocupa o fundo do container */
+.card{
+    /* criar opacidade: número hexadecimal com o grau de transparirência no final*/
+    background-color: #ffffff85;
+    /* aumentar o tamanho do card */
+    padding: 30px;
+    /* borda curva */
+    border-radius: 4%;
+    /* sombra do card */
+    box-shadow: 3px 3px 1px 0px #00000080;
+}
+
+/* escrita 'Entrar' */
+ h1{
+    /* centralizador de texto */
+    text-align: center;
+    /* margem em relação à base */
+    margin-bottom: 20px;
+    /* cor do texto */
+    color: rgb(26, 26, 121);
+ }
+
+ /* todos os inputs */
+ input{
+    width: 100%;
+    padding: 5px 5px;
+    /* fixar na linha e nada mais ocupar o mesmo espaço */
+    display: inline-block;
+    /* tirar as bordas */
+    border: 0;
+    /* borda de baixo */
+    border-bottom: 2px solid rgb(26, 26, 121);
+    background-color: transparent;
+ }
+
+ .label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid rgb(26, 26, 121);
+    background-color: transparent;
+    /* tirar a borda que fica em volta ao clicar */
+    outline: 0;
+    /* mínimo de largura */
+    min-width: 180px;
+    /* tamanho da fonte */
+    font-size: 16px;
+    /* transição: tudo, 0.3 segundos, saindo */
+    transition: all .3s ease-out;
+    border-radius: 0;
+ }
+
+ .label-float{
+    /* posição relativa */
+    position: relative;
+    /* deixar as labels mais espaçadas */
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+ }
+
+ /* foco ao entrar no input */
+.label-float input:focus{
+    /* borda de baixo vai mudar de cor */
+    border-bottom: 2px solid rgb(54, 54, 242);
+}
+
+/* pegando a label */
+.label-float label{
+    color: rgb(26, 26, 121);
+    /* evento de pointer: nenhum */
+    pointer-events: none;
+    /* ficar por cima de qualquer coisa */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+/* entrar no input: label sobe e dps desce. está preenchida fica em cima*/
+.label-float input:focus + label, 
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: rgb(54, 54, 242);
+}
+
+/* botão */
+button{
+    background-color: transparent;
+    border-color: rgb(26, 26, 121);
+    color: rgb(26, 26, 121);
+    padding: 7px;
+    /* negrito */
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-out;
+    box-shadow: 1.5px 1.5px 1px rgb(26, 26, 121);
+}
+
+/*  botão ao passar o mouse */
+button:hover{
+    background-color: rgb(76, 76, 175);
+    color: #fff;
+}
+
+/* classe do botão */
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+/* linha a baixo  */
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+/* parágrafo do html */
+p{
+    color: rgb(26, 26, 121);
+    font-size: 14pt;
+    text-align: center;
+}
+
+/* link cadastrar */
+a{
+    color: rgb(76, 76, 175);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+a:hover{
+    color: rgb(26, 26, 121);
+}
+
+/* eye icon */
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(26, 26, 121);
+}
+
+/* mensagem de erro */
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #f5c2c2;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+/* mensagem de sucesso */
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
