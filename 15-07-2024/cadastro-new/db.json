@@ -1,0 +1,24 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "nome": "Pedro Lima",
+      "email": "pedro_lima@hotmail.com"
+    },
+    {
+      "id": "2",
+      "nome": "Gabriely Félix",
+      "email": "gabriely_felix@hotmail.com"
+    },
+    {
+      "id": "3",
+      "nome": "Ana Beatriz",
+      "email": "ana_beatriz@hotmail.com"
+    },
+    {
+      "id": "90cd",
+      "nome": "f",
+      "email": "f@gmail"
+    }
+  ]
+}

@@ -19,10 +19,13 @@ const Header = () => {
                         <li>
                             <Link to='/sobre' className="nav-link">Sobre</Link>
                         </li>
+                        <li>
+                            <Link to='/listagem' className="nav-link">Listagem</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     )
 }
-export default Header
+export default Header;
