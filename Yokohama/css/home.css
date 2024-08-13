@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 10px;
+    color: #ffffff;
+}
+
+body {
+  background: url(https://trello.com/1/cards/66b20a121480761d85c9f58b/attachments/66bb8a80db5da87f3a95724a/previews/66bb8a81db5da87f3a957b0d/download/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#login {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+
+#top-line{
+    display: flex;
+}
+
+#cima {
+    transform: rotate(90deg);
+    display: flex;
+    padding-left: 10px;
+    height: 180px;
+}
