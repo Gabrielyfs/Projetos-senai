@@ -9,4 +9,3 @@ bnt.addEventListener('click', () =>{
         inputSenha.setAttribute('type', 'password')
     }
 })
-

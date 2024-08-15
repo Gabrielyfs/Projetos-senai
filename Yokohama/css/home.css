@@ -1,7 +1,14 @@
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 *{
     padding: 0;
-    margin: 10px;
+    margin: 0px;
     color: #ffffff;
+    font-family: 'poppins';
 }
 
 body {
@@ -11,9 +18,9 @@ body {
   background-attachment: fixed;
 }
 
-#login {
+.item {
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
     height: 50px;
     border-radius:50%;
 }
@@ -27,4 +34,27 @@ body {
     display: flex;
     padding-left: 10px;
     height: 180px;
+}
+
+#chefe{
+    object-fit: cover;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#logo {
+    max-height: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
+    cursor: pointer;
+    display: flex;
+}
+
+footer{
+    font-size: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
 }

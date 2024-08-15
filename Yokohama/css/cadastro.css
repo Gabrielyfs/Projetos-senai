@@ -32,7 +32,6 @@ h1 {
 
 input {
     max-width: 100%;
-    padding: 5px 5px;
     display: inline-block;
     background-color: #ffffff;
 }
@@ -78,32 +77,15 @@ button {
     border: 0;
     font-size: 13px;
     cursor: pointer;
+    box-shadow: 2px 2px 2px #000000;
     margin: auto;
     display: block;
     margin-top: 40px;
-    box-shadow: 2px 2px 2px #000000;
 }
 
 button:hover {
     transition: all .3s ease-out;
     background-color: #af1a17;
-}
-
-p {
-    color: #ffffff;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 50px;
-}
-
-a {
-    color: #DB0101;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:hover {
-    color: #ff0000;
 }
 
 #logo {
