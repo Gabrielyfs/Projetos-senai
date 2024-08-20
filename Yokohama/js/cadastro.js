@@ -8,4 +8,10 @@ bnt.addEventListener('click', () =>{
     } else {
         inputSenha.setAttribute('type', 'password')
     }
-})
+});
+
+bntEntrar.addEventListener('click', () => {
+    window.location.href =  "./home.html"
+ } ); 
+
+ 
