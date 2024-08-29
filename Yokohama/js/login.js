@@ -1,6 +1,7 @@
 let bnt = document.querySelector('.fa-eye')
 let bntEntrar = document.querySelector('#entrar')
 let bntCad = document.querySelector('#cadastro')
+let logo = document.querySelector('#logo')
 
 bnt.addEventListener('click', () =>{
     let inputSenha = document.querySelector('#senha')
@@ -19,5 +20,7 @@ bntCad.addEventListener('click', () => {
     window.location.href =  "./cadastro.html"
  } );
 
-
+logo.addEventListener('click', () => {
+    window.location.href =  "./home.html"
+});
 

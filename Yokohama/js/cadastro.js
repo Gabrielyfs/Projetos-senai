@@ -1,5 +1,6 @@
 let bnt = document.querySelector('.fa-eye')
 let bntEntrar = document.querySelector('#entrar')
+let logo = document.querySelector('#logo')
 
 bnt.addEventListener('click', () =>{
     let inputSenha = document.querySelector('#senha')
@@ -14,4 +15,6 @@ bntEntrar.addEventListener('click', () => {
     window.location.href =  "./home.html"
  } ); 
 
- 
+ logo.addEventListener('click', () => {
+    window.location.href =  "./home.html"
+});

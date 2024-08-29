@@ -12,23 +12,26 @@
 }
 
 body {
-    background: url(https://trello.com/1/cards/66b20a121480761d85c9f58b/attachments/66bb8a80db5da87f3a95724a/previews/66bb8a81db5da87f3a957b0d/download/image.png);
+    background: url(../background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
-.item {
+.bolinhas {
     object-fit: cover;
     max-width: 50px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #top {
     display: flex;
-    margin: 18px;
+    margin: 12px;
 }
 
 #logo {
@@ -37,15 +40,16 @@ body {
 
 a {
     text-decoration: none;
-    margin-left: auto;
-    margin-right: 30px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: 110px;
 }
 
 .yokohama {
     display: flex;
-    margin-left: 32%;
+    justify-content: center;
     margin-top: 20px;
+    margin-left: 32%;
 }
 
 #top h1 {
@@ -56,21 +60,48 @@ a {
     height: 350px;
     object-fit: cover;
     border-radius: 20px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-left: 12px;
+    transition: .5s ease;
 }
 
 .carrossel {
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: clip;
 }
 
 .wapper {
+    width: 100%;
     max-width: 1200px;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 70px;
 }
 
-.wapper img:first-child {
-    margin-left: 0px;
+.wapper svg {
+    background: #ffffffa2;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.wapper svg:first-child {
+    left: -12px;
+}
+
+.wapper svg:last-child {
+    right: -23px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
 }
 
 /* 

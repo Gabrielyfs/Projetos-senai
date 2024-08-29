@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../css/home.css">
+
+    <!-- fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <title>Yokohama</title>
 </head>
@@ -19,46 +19,63 @@
     <div class="container">
 
         <div id="top">
-            <img class="item" src="../Captura de tela 2024-08-13 090852.png" alt="Login">
-            <img class="item" src="../Captura de tela 2024-08-13 090840.png" alt="SAC">
+            <div class="info">
+                <img class="bolinhas" id="login" src="../login.png" alt="Login">
+                <img class="bolinhas" id="sac" src="../sac.png" alt="SAC">
 
-            <section class="yokohama">
-                <img id="logo" src="../file.png">
-                <h1>YOKOHAMA</h1>
-            </section>
+                <section class="yokohama">
+                    <img id="logo" src="../logo.png">
+                    <h1>YOKOHAMA</h1>
+                </section>
 
-            <a href="./cadastro.html">Cadastro</a>
-        </div>
-
-        <div class="wapper">
-            <div class="carrossel">
-                <img src="https://th.bing.com/th/id/OIG2..VHClrrqosrMzeHT07l3?pid=ImgGn" alt="restaurante">
-                <img src="https://th.bing.com/th/id/OIG2.4jm6XZWuwUz78C9fZzlY?pid=ImgGn" alt="restaurante">
-                <img src="https://th.bing.com/th/id/OIG2.ehSg4pe7ks7VPYzzR1BF?pid=ImgGn" alt="restaurante">
-                <img src="https://th.bing.com/th/id/OIG3.802ugIBITaVPE0lno6Xr?pid=ImgGn" alt="restaurante">
-                <img src="https://th.bing.com/th/id/OIG4.SWBgQvltfkwDNx49Xwi0?pid=ImgGn" alt="restaurante">
-                <img src="https://th.bing.com/th/id/OIG3.HfAyCfn6ohWRm6qLMHAq?pid=ImgGn" alt="restaurante">
+                <a href="./cadastro.html">Cadastro</a>
             </div>
+
         </div>
+        <div class="wapper">
+
+            <!-- seta icon -->
+            <svg id="arrow-left" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
+                class="bi bi-caret-left-fill control" viewBox="0 0 16 16">
+                <path
+                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+        </svg>
+
+            <div class="carrossel">
+
+                <img src="../restaurante1.jpg" alt="restaurante1" class="item current-item " >
+                <img src="../restaurante2.jpg" alt="restaurante2" class="item current-item ">
+                <img src="../restaurante3.jpg" alt="restaurante3" class="item current-item ">
+                <img src="../restaurante4.jpg" alt="restaurante4" class="item current-item ">
+                <img src="../restaurante5.jpg" alt="restaurante5" class="item current-item ">
+                <img src="../restaurante6.jpg" alt="restaurante6" class="item current-item ">
+            </div>
+
+            <svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                class="bi bi-caret-right-fill control" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+        </svg>
 
 
 
 
-        <!-- <footer>
-            <img id="chefe"
+            <!-- <footer>
+            <img id="radiofe"
                 src="https://trello.com/1/cards/66b20a121480761d85c9f58b/attachments/66bded8281bf13addff5743a/download/image.png"
                 alt="chefe">
-            <section id="desc">
+            <section id="radioc">
                 <h1>Chefe gastronômico</h1>
                 <h1>Jun Sakamoto</h1>
             </section>
-            <section id="info">
+            <section id="radioo">
                 <h1>Rua Jardim Lisboa, 328, São Paulo.</h1>
                 <h1>Telefone: (11) 99999-9999</h1>
             </section>
         </footer> -->
 
-    </div>
+        </div>
+        <script src="../js/home.js"></script>
 </body>
 
 
