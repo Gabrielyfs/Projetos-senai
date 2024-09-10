@@ -25,18 +25,22 @@
             <h1>CADASTRO</h1>
 
             <div class="label-float">
-                <input type="email" id="email" placeholder="EMAIL OU USUÁRIO" required>
+                <input type="email" id="email" placeholder="EMAIL" oninput="email()">
+                <p id="email-erro" class="msg-erro">Insira um email válido</p>
             </div>
             <div class="label-float">
-                <input type="password" id="senha" placeholder="SENHA" required>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <input type="password" id="senha" placeholder="SENHA" oninput="senha()">
+                <i class="fa fa-eye eye-senha" aria-hidden="true"></i>
+                <p id="senha-erro" class="msg-erro">Insira no mínimo 5 caracteres</p>
             </div>
             <div class="label-float">
-                <input type="password" id="confSenha" placeholder="CONFIRMAR SENHA">
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <input type="password" id="confSenha" placeholder="CONFIRMAR SENHA" oninput="confSenha()">
+                <i class="fa fa-eye eye-conf" aria-hidden="true"></i>
+                <p id="conf-erro" class="msg-erro"> As senhas não conferem</p>
+                <p id="pre-erro" class="msg-erro">Preencha todos os campos corretamente</p>
             </div>
 
-            <button id="entrar" >ENTRAR</button>
+            <button type="submit" id="entrar" onclick="cadastrar()">CADASTRAR</button>
         </div>
     </div>
 </form>

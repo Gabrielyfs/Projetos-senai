@@ -89,7 +89,7 @@ button:hover {
     background-color: #af1a17;
 }
 
-p {
+#pLogin {
     color: #ffffff;
     text-align: center;
     font-size: 16px;
@@ -128,4 +128,13 @@ a:hover {
 .card:hover {
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.489);
     transform: scale(1.05);
+}
+
+.msg-erro {
+    display: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 12px;
 }
