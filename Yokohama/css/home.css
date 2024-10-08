@@ -12,51 +12,69 @@
 }
 
 body {
-    background: url(../background.png);
+    background: url(../img/background.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
     overflow-x: hidden;
 }
 
-.bolinhas {
-    object-fit: cover;
-    max-width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#top {
-    display: flex;
-    margin: 12px;
-}
-
 #logo {
-    height: 50px;
+    max-height: 10dvh;
 }
 
-a {
-    font-size: 20px;
-    text-decoration: none;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: 25px;
-}
-
-.yokohama {
-    display: flex;
+.navbar {
+    box-sizing: border-box;
     justify-content: center;
-    margin-top: 20px;
-    margin-left: 32%;
+    width: 100%;
+    position: fixed;
 }
 
-#top h1 {
-    font-size: 32px;
+nav {
+    background: linear-gradient(90deg, #000000c1, #310000c1);
+    border-radius: 0 0 30px 30px;
 }
 
+.logoF {
+    height: 50px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 1%;
+}
+
+.logoL {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+
+nav a, label {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+nav li, a, ul {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+    transition: .5s all;
+}
+/* 
 .carrossel img {
     height: 350px;
     object-fit: cover;
@@ -74,11 +92,10 @@ a {
 
 .wapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1150dvh;
     flex-wrap: wrap;
     position: relative;
-    margin-top: 70px;
-    margin-left: 25px;
+    margin-top: 25dvh;
 }
 
 .wapper svg {
@@ -91,7 +108,6 @@ a {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-
     z-index: 1000;
 }
 
@@ -101,12 +117,7 @@ a {
 
 .wapper svg:last-child {
     right: -23px;
-}
-
-.info {
-    width: 100%;
-    display: flex;
-}
+} */
 
 /* 
 #chefe{
@@ -129,7 +140,7 @@ footer{
     left: 30%;
     right: 50%;
 }
-.eventos .foto {
+/* .eventos .foto {
     height: 500px;
     object-fit: cover;
     margin-left: 3%;
@@ -146,18 +157,20 @@ footer{
 .eventos  {
     margin-top: 5%;
     margin-bottom: 6%;
-    background: linear-gradient(360deg, #230505, #270404);
+    background:#230505;
     height: 640px;
     display: flex;
+    border: #600d0d 2px solid;
 }
 
 .foto-info {
-    justify-content: center;
+    max-width: 500px;
+    padding-left: 15dvh;
+    text-align: justify;
 }
 
 #verMais {
     text-transform: uppercase;
-    
     background: none;
     font-size: 17px;
     padding: 12px 40px;
@@ -170,4 +183,5 @@ footer{
 #verMais:hover {
     background: #ffffff;
     color: #000000;
-}
+    box-shadow: -10px 10px 10px #ffffff69;
+} */

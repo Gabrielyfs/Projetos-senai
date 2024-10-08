@@ -12,12 +12,12 @@
 }
 
 body {
-    background: url(../background.png);
+    background: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
-    
+
 }
 
 #logo {
@@ -28,8 +28,28 @@ body {
     display: flex;
 }
 
-.container {
+.card-text{
+    color: white;
+    margin: 10px;
+    max-width: 500px;
+    text-align: justify;
     
+}
 
+.title-3 {
+ outline: none;
+ color: white;
+ text-decoration: none;
+ cursor: pointer;
+ margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-card{
+  margin: 50px;
 }
 
