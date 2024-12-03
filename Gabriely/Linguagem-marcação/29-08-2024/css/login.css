@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #ee9ca7, #ffdde1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.card {
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.454);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fd80a1;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+label {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.senha {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    color: #f9678e;
+    background-color: #ffe9f1;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 38%;
+    transition: .2s;
+}
+
+button:hover {
+    background-color:  #f9678e;
+    color: #ffe9f1;
+}
+
+.cadastro {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: #f9678e;
+    padding-left: 5px;
+}
+
+.cadastro a:hover {
+    color: #f50c4a;
+}

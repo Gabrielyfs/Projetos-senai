@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="HOME.HTML">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="produto.html">Produto</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Página de contato</h1>
+
+        <form>
+            <div class="form-control">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome"  placeholder="Digite seu nome"/>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+
+            <div class="form-control">
+                <strong>Cursos</strong>
+            </div>
+
+            <div class="form-control">
+                <input type="checkbox" value="javaScript" id="javaScript" />
+                <label for="javaScript">JavaScript</label>
+
+                <input type="checkbox" value="html" id="html" />
+                <label for="html">HTML</label>
+
+                <input type="checkbox" value="css" id="css" />
+                <label for="css">CSS</label>
+            </div>
+
+            <div class="form-control">
+                <strong>Você tem mais de 15 anos?</strong>
+            </div>
+
+            <div class="form-control">
+                <label for="sim">Sim</label>
+                <input type="radio" name="idade" value="sim" id="sim" />
+
+                <label for="nao">Não</label>
+                <input type="radio" name="idade" value="nao" id="nao" />
+            </div>
+
+            <div class="form-control">
+                <label for="futebol">Selecione um time</label>
+                <select name="futebol" id="futebol">
+                    <option value="bangu" selected>Bangu</option>
+                    <option value="botafogo">Botafogo</option>
+                    <option value="sao-paulo">São Paulo</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="numero">Digite um número</label>
+                <input type="numer" id="numero">
+            </div>
+
+            <div class="form-control d-flex">
+                <div>
+                    <label for="data">data</label>
+                    <input type="date" id="data" />
+                </div>
+                <div>
+                    <label for="hora">hora</label>
+                    <input type="time" id="hora" />
+                </div>
+            </div>
+
+
+            <div class="form-control d-flex">
+                <div>
+                    <label for="filtro">Filtro</label>
+                    <input type="range" id="filtro" />
+                </div>
+
+                <div>
+                    <label for="cor">Escolha uma cor</label>
+                    <input type="color" id="cor">
+                </div>
+            </div>
+
+            <fieldset class="form-control">
+                <legend>Arquivos</legend>
+
+                <div>
+                    <label for="arquivo">Buscar arquivo</label>
+                    <input type="file" id="arquivo">
+                </div>
+            </fieldset>
+
+            <fieldset class="form-control">
+                <legend>Comentários</legend>
+
+                <textarea name="comentario" rows="5" cols="100"></textarea>
+            </fieldset>
+
+            <div class="form-control">
+                <button type="submit">enviar</button>
+                <button type="reset" class="limpar">limpar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

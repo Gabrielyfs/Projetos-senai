@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*fonte*/
+    font-family: arial;
+}
+
+body {
+    background: #8B008B;
+}
+
+.container {
+    /* Largura */
+    max-width: 1000px;
+    background: #fff;
+    /*Deixar no centro a container*/
+    margin: 0 auto;
+    /*Espaçamento por dentro do elemento*/
+    padding: 20px;
+}
+
+.containerBox .box1 {
+    /*Largura*/
+    max-width: 350px;
+    /*Cor do fundo*/
+    background: #90EE90;
+    /*Espaçamento fora do elemento*/
+    margin: 30px;
+}
+
+.box1 h1 {
+    /*Tamanho de fonte*/
+    font-size: 18px;
+    /*Cor de texto*/
+    color: #8B008B;
+    /*Espaçamento dentro do elemento*/
+    padding: 10px;
+}
+
+.box1 h2 {
+    /*Tamanho de fonte*/
+    font-size: 15px;
+    /*Cor de texto*/
+    color: #d58606;
+    /*Espaçamento dentro do elemento*/
+    padding: 10px;
+}
+
+.box1 a {
+    color: orangered;
+    font-size: 22px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.box1 a:hover {
+    text-decoration: underline;
+    background: #b15606;
+    color: #fff;
+}

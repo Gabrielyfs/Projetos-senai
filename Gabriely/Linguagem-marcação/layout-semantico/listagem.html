@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Logo</h1>
+        </header>
+
+        <!-- navegação do site -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="Contato">Contato</a>
+                </li>
+                <li>
+                    <a href="listagem.html">Listagem</a>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <form>
+                <input type="text" placeholder="Procure seu time" list="faixa">
+
+                <datalist id="faixa">
+                    <option value="Santos">Times de SP</option>
+                    <option value="Vasco">Times do RJ</option>
+                    <option value="Cruzeiro">Times de MG</option>
+                    <option value="Bahia">Times da BA</option>
+                    <option value="Curitiba">Times do PR</option>
+                </datalist>
+
+            </form>
+        </aside>
+
+        <section>
+            <h1>Times de futebol</h1>
+
+            <details>
+                <summary>Times</summary>
+
+                <ul>
+                    <li>Flamengo</li>
+                    <li>Vasco</li>
+                    <li>Santos</li>
+                    <li>Bota fogo</li>
+                </ul>
+            </details>
+
+            <details open>
+                <summary>Nomes de usuários</summary>
+
+                <ul>
+                    <li class="d-none">Kaio</li>
+                    <li>Mariano</li>
+                    <li>Fernando</li>
+                    <li>Mariani</li>
+                    <li>Beatriz</li>
+                </ul>
+            </details>
+
+        </section>
+
+    </div>
+</body>
+
+</html>

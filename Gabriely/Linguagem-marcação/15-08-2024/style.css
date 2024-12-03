@@ -1,0 +1,14 @@
+body{
+    background-color: cyan;
+}
+
+.container {
+    max-width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.containerBox .box1{
+    max-width: 350px;
+    background: #bdbdbd;
+}

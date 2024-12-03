@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.container h1{
+    padding: 20px;
+    color: #808ad2;
+}
+
+nav{
+    height: 60px;
+    background: #c0c4fb;
+  
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 58px;
+    border: 1px solid rgb(95, 30, 174);
+}
+nav ul li a{
+    color:  #070f86;
+    text-decoration: none;
+    font-size: 20px;
+   background-color: #808ad2;
+   display: inline-block;
+   padding: 8PX;
+   border-radius: 8px;
+   transition: all 0.5s;
+}
+nav ul li a:hover{
+    background: #070f86;
+    border: 1px solid #c0c4fb;
+    color: white;
+}
+.Container-banner {
+    border: 2px solid purple;
+    max-width: 900px;
+    margin: 20px auto;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+   
+/* pagina home */
+.btn-produto{
+    max-width: 100px;
+    background: purple;
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px;
+}
+.btn-produto:hover{
+    background:rgb(169, 51, 180);
+
+}
+
+
+
+/* pagina produto */
+table{
+    width: 100%;
+    max-width: 200px;
+}
+.containerTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containerTable h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color:  #808ad2;
+}
+
+
+.bg-title{
+    background: #ced1f5;
+    color: rgb(0, 0, 0);
+}
+.bg-prime{
+    background: #8d93d6c5;
+}
+
+/* formulário */
+form {
+    padding: 20px;
+}
+
+.form-control {
+    border: 1px solid #0f1dd8;
+    padding: 20px;
+    margin-bottom: 4px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-control input[type='text'],
+.form-control input[type='email'],
+.form-control input[type='number'], 
+.form-control input[type='date'],
+.form-control input[type='time'] {
+    border: 2px solid #808ad2;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-control button {
+    background: #808ad2;
+    color: #fff;
+    padding: 15px;
+    border: 0 ;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.limpar {
+    background: #959dd8 !important;
+}
+
+.form-control select {
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.pag-login {
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 2px solid rgb(150, 63, 98) !important;
+}
+
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.pag-login {
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+
+.pag-login button  {
+    background: rgb(103, 37, 63) !important; 
+    color: azure;
+    padding: 10px;
+    border: 0;
+}
+
+
+.form-control select {
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+}
+
+
+/*cards */
+
+
+.banner-box { 
+    border: 1px solid #969696;
+    max-width: 800px;
+    height: 140px;
+    margin: 30px 0 20px 30px;
+    /* relativo */
+    position: relative;
+}
+
+.banner-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.targ {
+    width: 99%;
+    position: absolute;
+    top: 106px;
+    background: rgba(129, 101, 156, 0.646);
+    padding: 5px;
+}
+
+.targ p {
+    color: azure;
+    display: block;
+    padding: 3px;
+
+}
