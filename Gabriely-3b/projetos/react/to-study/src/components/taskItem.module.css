@@ -3,4 +3,40 @@
     padding: 1rem 1.5rem;
     padding-left: 5rem;
     border-bottom: 1px solid #f3f4f6;
+    gap: 0.75rem;
+
+    &:hover {
+        .deleteButton{opacity: 1;}
+    }
+}
+
+.checkButton {
+    background-color: transparent;
+    border: none;
+    color: #d1d6db;
+    cursor: pointer;
+    transition: color 0.5s;
+
+    &:hover {
+        color: #4adfbc;
+    }
+}
+
+.deleteButton {
+    background-color: transparent;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0;
+
+    &:hover{
+        color: #ef4444;
+    }
+}
+
+.taskText {
+    flex: 1;
+    align-self: center;
+    cursor: pointer;
 }

@@ -4,11 +4,11 @@ import style from "./taskItem.module.css"
 export function TaskItem() {
     return (
     <div className={style.taskItem}>
-        <button>
+        <button className={style.checkButton}>
             <CheckCircle />
         </button>
-        <span>Back-end</span>
-        <button>
+        <span className={style.taskText}>Back-end</span>
+        <button className={style.deleteButton}>
             <Eraser />
         </button>
     </div>

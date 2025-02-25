@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Front-end</title>
 </head>
 <body>
-    Front-end
+    <h1>Seja bem-vindo</h1>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <br><br>
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade">
+        <br><br>
+        <button onclick="mudar(event)">Clique aqui</button>
+    </form>
+
+    <br>
+    <div id="resultado"></div>
+    <div id="resultadoCid"></div>
+
 </body>
 
-<script src="./js/calc.js"></script>
+<script src="./script.js"></script>
 </html>
