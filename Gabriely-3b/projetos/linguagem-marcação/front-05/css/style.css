@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #c3a9c7, #9dcbce);
+}
+
+.container {
+    max-width: 500px;
+    width: 500px;
+    border: 2px solid white;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.container h2 {
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+
+.form-control {
+    padding: 10px;
+}
+
+.form-control label {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.form-control input {
+    border: 2px solid white;
+    padding: 3px;
+    outline: none;
+}
+
+button {
+    margin: 10px;
+    background: white;
+    color: #bc58d3;
+    padding: 13px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
