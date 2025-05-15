@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Produto {
+  id          Int          @id @default(autoincrement())
+  name        String
+  price       Float
+  description String
+  ingredients String
+  imgUrl      String
+  ItemPedido  ItemPedido[]
+}
+
+model Usuario {
+  id       Int      @id @default(autoincrement())
+  name     String
+  password String
+  email    String   @unique
+  Pedido   Pedido[]
+}
+
+model Pedido {
+  id       Int          @id @default(autoincrement())
+  userId   Int
+  user     Usuario      @relation(fields: [userId], references: [id])
+  itens    ItemPedido[]
+  status   String       @default("WAITING_PAYMENT")
+  total    Float
+  createAt DateTime     @default(now())
+}
+
+//  O itemPedido é uma cópia do produto
+model ItemPedido {
+  id          Int     @id @default(autoincrement())
+  name        String
+  price       Float
+  description String
+  ingredients String
+  imgUrl      String
+  pedidoId    Int
+  pedido      Pedido  @relation(fields: [pedidoId], references: [id])
+  produtoId   Int
+  produto     Produto @relation(fields: [produtoId], references: [id])
+  quantidade  Int
+}
